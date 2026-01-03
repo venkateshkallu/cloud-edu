@@ -21,64 +21,64 @@ const courseData: Record<string, {
 }> = {
   "relational-to-document-model": {
     title: "Relational to Document Model",
-    description: "Learn to convert SQL or relational models to the document model, design data relationships, and enforce schema validation. Enhance your ability to create efficient, well-structured applications with robust data models.",
+    description: "Learn to migrate from traditional SQL databases to Azure Cosmos DB, design scalable data models, and implement best practices for cloud-native applications. Master the transition from relational to document-based data storage in Azure.",
     duration: "1.25 Hours",
     isFree: true,
     type: "skill",
-    topics: ["Data Modeling", "Developer", "Essentials"],
-    videoId: "EE8ZTQxa0AM", // MongoDB Introduction video
+    topics: ["Azure Cosmos DB", "Cloud Migration", "NoSQL"],
+    videoId: "EE8ZTQxa0AM",
     objectives: [
       {
-        title: "Model for Workloads",
-        description: "Map the relational model to the document model and apply the methodology to data modeling.",
+        title: "Design Cloud Data Models",
+        description: "Learn to design efficient data models for Azure Cosmos DB and understand partitioning strategies for optimal performance.",
       },
       {
-        title: "Design Relationships",
-        description: "Identify and model relationships between entities using embedding and referencing patterns.",
+        title: "Migrate Existing Applications",
+        description: "Understand migration patterns and best practices for moving from SQL Server to Azure Cosmos DB.",
       },
       {
-        title: "Validate Schemas",
-        description: "Implement schema validation rules to enforce document structure and data integrity.",
+        title: "Optimize Performance",
+        description: "Implement indexing strategies and query optimization techniques for Azure Cosmos DB workloads.",
       },
     ],
     content: [
-      "If you're a developer with experience in SQL and relational databases, but new to document databases, this Relational to Document Model Skill Badge is designed to help you bridge that gap. In this badge, you'll learn how to take the data modeling knowledge you already have and apply it to the document model – a structure optimized for modern, performance-driven applications.",
-      "Traditional relational data modeling often starts by defining normalized tables, their relationships, and constraints. In contrast, document databases encourage a different way of thinking. Here, the goal is to design documents that reflect how your application actually accesses data. Instead of separating data into multiple tables, you'll learn to group related data together – because in document databases, data that is accessed together should be stored together. This principle is at the heart of efficient schema design.",
-      "You'll start by identifying the workload of an application – in this case, a bookstore that sells audiobooks, eBooks, and print titles. Using this practical example, you'll map out which pieces of data (or entities) your application manages, how those entities interact, and how they change over time. With this context, you'll explore the second phase of schema design: identifying the relationships between those entities and understanding how to model them in a document database.",
-      "Throughout the badge, you'll draw connections between familiar SQL concepts and document database features. For example, you'll see how schema validation can be used to enforce structure and constraints, just like you're used to in a relational setup – but with more flexibility. You'll apply validation rules to a reviews collection in the bookstore app, gaining hands-on experience with powerful schema design tools. Labs are integrated throughout the course to give you opportunities to practice what you learn in real-world scenarios. These interactive exercises are designed to reinforce your understanding and build your confidence as you transition from SQL to document databases.",
-      "When data is stored separately, the cost is two or more retrievals. But if we store it together, we only have to retrieve data once.",
-      "Once we've identified a workload and the entities in our bookstore application, we will apply the second phase of the schema design methodology, identifying and modeling the relationships that exist between those entities. We'll cover the different types of relationships that are possible with document databases and consider how they apply to the relationships between the entities in our bookstore application.",
-      "To further apply your prior SQL knowledge, we'll explore how schema validation lets you enforce the rules governing the structure of the documents in your application.",
-      "To learn more about this, we'll set up schema validation rules for reviews collection in our bookstore app. You'll have plenty of opportunities to practice what you learned by completing labs that present real world scenarios.",
-      "This way, you'll build your knowledge and get comfortable with the software at the same time.",
-      "When you're finished, you'll be ready to put your new skills to the test.",
-      "To earn your badge, simply complete all the related content and then take the short test at the end. After passing the test, you'll receive an official Credly badge via the email you provided. Be sure to share your badge on LinkedIn to show off your new skills.",
+      "If you're a developer with experience in SQL Server and relational databases, but new to Azure Cosmos DB, this course is designed to help you bridge that gap. You'll learn how to take your existing database knowledge and apply it to Azure's globally distributed, multi-model database service – optimized for modern, cloud-native applications.",
+      "Traditional relational data modeling in SQL Server often starts by defining normalized tables, relationships, and constraints. Azure Cosmos DB encourages a different approach. Here, the goal is to design documents and containers that reflect how your application accesses data in the cloud. Instead of separating data into multiple tables, you'll learn to group related data together – because in Azure Cosmos DB, data that is accessed together should be stored together for optimal performance and cost efficiency.",
+      "You'll start by identifying the workload of a cloud application – in this case, an e-commerce platform that needs global distribution and high availability. Using this practical example, you'll map out which pieces of data your application manages, how they interact, and how they scale in the cloud. With this context, you'll explore Azure Cosmos DB's partitioning strategy and how to model relationships in a document database.",
+      "Throughout the course, you'll draw connections between familiar SQL Server concepts and Azure Cosmos DB features. For example, you'll see how Azure Cosmos DB's schema flexibility compares to SQL Server's rigid schema requirements, and how to implement data validation and consistency models. You'll work with real Azure resources, gaining hands-on experience with the Azure portal, SDKs, and monitoring tools.",
+      "When data is distributed globally, the cost of cross-partition queries can be significant. But if we design our partition strategy correctly, we can achieve single-partition queries for optimal performance.",
+      "Once we've identified a workload and the entities in our e-commerce application, we will apply Azure Cosmos DB design patterns, identifying and modeling the relationships that exist between those entities. We'll cover different consistency levels, global distribution strategies, and how they apply to real-world scenarios.",
+      "To further apply your SQL knowledge, we'll explore how Azure Cosmos DB handles transactions, indexing, and query optimization compared to traditional SQL Server approaches.",
+      "To learn more about this, we'll set up an Azure Cosmos DB account, configure global distribution, and implement best practices for a production workload. You'll have plenty of opportunities to practice what you learned through hands-on labs in the Azure portal.",
+      "This way, you'll build your knowledge of Azure services while getting comfortable with cloud-native database design patterns.",
+      "When you're finished, you'll be ready to architect and implement Azure Cosmos DB solutions in production environments.",
+      "To earn your badge, simply complete all the related content and then take the short assessment at the end. After passing, you'll receive an official Microsoft Learn badge that you can share on LinkedIn to showcase your Azure expertise.",
     ],
   },
   "schema-patterns": {
-    title: "Schema Patterns and Anti-patterns",
-    description: "How to apply schema design patterns and identify anti-patterns. Learn best practices for designing efficient document schemas.",
+    title: "Azure SQL Database Design Patterns",
+    description: "Master advanced design patterns for Azure SQL Database and Azure SQL Managed Instance. Learn best practices for cloud database architecture, performance optimization, and security implementation.",
     duration: "1.5 Hours",
     isFree: true,
     type: "skill",
-    topics: ["Schema Design", "Best Practices", "Developer"],
-    videoId: "leNCfU5SYR8", // MongoDB Schema Design video
+    topics: ["Azure SQL", "Database Design", "Cloud Architecture"],
+    videoId: "leNCfU5SYR8",
     objectives: [
       {
-        title: "Understand Patterns",
-        description: "Learn common schema design patterns used in document databases.",
+        title: "Implement Cloud Patterns",
+        description: "Learn cloud-native database design patterns specific to Azure SQL Database and Managed Instance.",
       },
       {
-        title: "Identify Anti-patterns",
-        description: "Recognize and avoid common schema design mistakes.",
+        title: "Optimize Performance",
+        description: "Understand indexing strategies, query optimization, and performance monitoring in Azure SQL.",
       },
       {
-        title: "Apply Best Practices",
-        description: "Implement schema patterns effectively in your applications.",
+        title: "Ensure Security & Compliance",
+        description: "Implement Azure SQL security features including Always Encrypted, Row Level Security, and compliance frameworks.",
       },
     ],
     content: [
-      "Schema design is crucial for building performant applications. This course teaches you the patterns that work and the anti-patterns to avoid.",
+      "Database design is crucial for building performant cloud applications. This course teaches you the patterns that work in Azure SQL Database and the anti-patterns to avoid when migrating to the cloud.",
     ],
   },
 };
@@ -128,12 +128,12 @@ export default function CourseDetail() {
             {/* Main Content */}
             <div className="lg:col-span-2">
             {/* Title */}
-            <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6 leading-tight">
+            <h1 className="text-4xl md:text-5xl font-bold text-black mb-6 leading-tight">
               {course.title}
             </h1>
 
             {/* Description */}
-            <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
+            <p className="text-lg text-gray-700 mb-8 leading-relaxed">
               {course.description}
             </p>
 
@@ -148,7 +148,7 @@ export default function CourseDetail() {
                       "px-6 py-3 text-sm font-medium transition-all rounded-t-lg",
                       activeTab === tab.id
                         ? "bg-primary text-primary-foreground"
-                        : "text-muted-foreground hover:text-foreground hover:bg-secondary"
+                        : "text-black hover:text-black hover:bg-secondary"
                     )}
                   >
                     {tab.label}
@@ -162,10 +162,10 @@ export default function CourseDetail() {
               <div className="animate-fade-in">
                 {/* Who is this Course Good for? */}
                 <section className="mb-12">
-                  <h2 className="text-2xl font-bold text-foreground mb-6">
+                  <h2 className="text-2xl font-bold text-black mb-6">
                     Who is this Course Good for?
                   </h2>
-                  <p className="text-muted-foreground leading-relaxed mb-6">
+                  <p className="text-gray-800 leading-relaxed mb-6">
                     {course.content[0]}
                   </p>
 
@@ -175,7 +175,7 @@ export default function CourseDetail() {
                       <span className="text-xs font-semibold text-primary uppercase tracking-wider mb-2">
                         VBUV Skill
                       </span>
-                      <h3 className="text-sm font-bold text-foreground text-center mb-3">
+                      <h3 className="text-sm font-bold text-black text-center mb-3">
                         {course.title}
                       </h3>
                       <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center">
@@ -183,7 +183,7 @@ export default function CourseDetail() {
                       </div>
                     </div>
                     <div className="flex-1">
-                      <p className="text-lg text-foreground leading-relaxed">
+                      <p className="text-lg text-black leading-relaxed">
                         Upon completion of the <strong>{course.title}</strong> skill check, you will earn a Credly Badge that you are able to share with your network.
                       </p>
                     </div>
@@ -192,7 +192,7 @@ export default function CourseDetail() {
 
                 {/* Learning Objectives */}
                 <section className="mb-12">
-                  <h2 className="text-2xl font-bold text-foreground mb-8">
+                  <h2 className="text-2xl font-bold text-black mb-8">
                     Learning Objectives
                   </h2>
                   <div className="space-y-6">
@@ -204,10 +204,10 @@ export default function CourseDetail() {
                           {objIndex === 2 && <BookOpen className="w-8 h-8 text-primary" />}
                         </div>
                         <div className="flex-1">
-                          <h3 className="text-xl font-bold text-foreground mb-2">
+                          <h3 className="text-xl font-bold text-black mb-2">
                             {objective.title}
                           </h3>
-                          <p className="text-muted-foreground">
+                          <p className="text-gray-700">
                             {objective.description}
                           </p>
                         </div>
@@ -218,10 +218,10 @@ export default function CourseDetail() {
 
                 {/* What to Expect */}
                 <section className="mb-12">
-                  <h2 className="text-2xl font-bold text-foreground mb-6">
+                  <h2 className="text-2xl font-bold text-black mb-6">
                     What to Expect in this Course
                   </h2>
-                  <div className="space-y-6 text-muted-foreground leading-relaxed">
+                  <div className="space-y-6 text-gray-800 leading-relaxed">
                     {course.content.slice(1).map((paragraph, contentIndex) => (
                       <p key={`content-${contentIndex}`}>{paragraph}</p>
                     ))}
@@ -230,7 +230,7 @@ export default function CourseDetail() {
 
                 {/* Let's Get Started */}
                 <section className="mb-12">
-                  <h2 className="text-xl font-bold text-foreground">
+                  <h2 className="text-xl font-bold text-black">
                     Let's get started.
                   </h2>
                 </section>
@@ -239,8 +239,8 @@ export default function CourseDetail() {
 
             {activeTab === "authors" && (
               <div className="animate-fade-in py-8">
-                <h2 className="text-2xl font-bold text-foreground mb-6">Course Authors</h2>
-                <p className="text-muted-foreground">
+                <h2 className="text-2xl font-bold text-black mb-6">Course Authors</h2>
+                <p className="text-gray-800">
                   This course was created by expert instructors with years of industry experience.
                 </p>
               </div>
@@ -248,8 +248,8 @@ export default function CourseDetail() {
 
             {activeTab === "testimonials" && (
               <div className="animate-fade-in py-8">
-                <h2 className="text-2xl font-bold text-foreground mb-6">What Learners Say</h2>
-                <p className="text-muted-foreground">
+                <h2 className="text-2xl font-bold text-black mb-6">What Learners Say</h2>
+                <p className="text-gray-800">
                   Read testimonials from learners who have completed this course.
                 </p>
               </div>
